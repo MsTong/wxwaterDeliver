@@ -1,0 +1,24 @@
+// filter.wxs
+var dateFormat = function (number) {
+  console.log(number)
+  var n = number * 1000;
+  let date = Date()
+  console.log(date.getFullYear())
+  var Y = date.getFullYear() + '/';
+  var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '/';
+  var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+  console.log(Y + M + D)
+  return (Y + M + D)
+
+}
+var moneyFormat = function (money) {
+  return money.toFixed(2);
+}
+
+/*
+ * 导出
+ */
+module.exports = {
+  dateFormat: dateFormat,
+  moneyFormat: moneyFormat
+}

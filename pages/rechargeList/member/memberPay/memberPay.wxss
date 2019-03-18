@@ -1,0 +1,71 @@
+/* pages/rechargeList/member/memberPay/memberPay.wxss */
+.memberPay {
+    border-top:1px solid #f5f5f5;
+    color: #333;
+}
+.memberPay-header {
+  height: 6vh;
+  line-height: 6vh;
+  padding:6vw 4vh;
+  border-bottom:1px solid #f5f5f5;
+  margin-bottom: 8vh;
+}
+.memberPay-header>.iconImage {
+  height: 8vh;
+  line-height: 8vh;
+  margin: auto;
+  padding-right: 2vw;
+}
+.iconImage> image {
+ width: 6vh;
+  height: 6vh;
+}
+.memberPay-header >.iconText {
+  height: 6vh;
+  line-height: 6vh;
+  font-size: 4vw;
+}
+.memberPay-title,.memberPay-money {
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 500;
+  padding: 0 2vh;
+}
+.memberPay-money {
+  color:red;
+  font-size: 6vw;
+}
+.memberPay-payType {
+  padding:6vw 4vh;
+  overflow: hidden;
+  position: relative;
+}
+.memberPay-payType>.iconImage {
+  height: 6vh;
+  line-height: 6vh;
+  margin: auto;
+  padding-right: 2vw;
+}
+.iconImage> image {
+ width: 6vh;
+  height: 6vh;
+}
+.memberPay-payType >.bankName {
+  height: 6vh;
+  line-height: 6vh;
+  font-size: 4vw;
+}
+.enterIcon {
+  width: 4vw;
+  height: 4vw;
+  margin: auto;
+  position: absolute;
+  right: 6vw;
+  top: 5vh;
+}
+.enterIcon image {
+  width: 4vw;
+  height: 4vw;
+}

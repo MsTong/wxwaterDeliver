@@ -1,0 +1,20 @@
+<!--pages/setting/setting.wxml-->
+<view class='setting'>
+  <view class='setting-item' bindtap='toSetting' wx:for='{{ settingList }}' wx:key='{{ index }}' data-jumpurl='{{ item.jumpurl }}'>
+    <text>{{ item.title }}</text><text wx:if='{{ index===0 }}' class='phone'>{{ phoneNumber }}</text>
+    <!-- <text></text> -->
+        <image src='/images/icon/right-arrow.png'></image>
+  </view>
+  <!-- <view class='setting-password'>
+    <text>绑定或修改手机号</text>
+    <text></text>
+  </view>
+  <view class='setting-paypassword'>
+    <text>绑定或修改手机号</text>
+    <text></text>
+  </view>
+  <view class='setting-address'>
+    <text>绑定或修改手机号</text>
+    <text></text>
+  </view> -->
+</view>

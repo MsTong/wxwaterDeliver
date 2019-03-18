@@ -1,0 +1,16 @@
+<!--pages/cardBag/cardBag.wxml-->
+<view class='myCardBag'>
+  <view class='myCardBag-item' wx:for='{{ myCardBag }}' wx:key='{{ index }}'>
+    <view class='myCardBag-item-title'>
+      <text>{{ item.title }}</text>
+      <text bindtap='checkAll' data-type='{{ item }}'>查看全部({{item.count}})</text>
+    </view>
+    <view class='myCardBag-item-itemCard' wx:for='{{ item.itemArr }}' wx:key='{{ index }}'>
+      <view class='myCardBag-item-card'>{{item.money}}</view>
+      <view class='myCardBag-item-btn'>
+        <button bindtap='toGet' data-item='{{item}}'>立即领取</button>
+      </view>
+    </view>
+  </view>
+</view>
+<i-toast id="toast"/>

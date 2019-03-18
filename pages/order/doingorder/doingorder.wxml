@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="profile">
+    <view class='head-parent'>
+      <view class='head'>配送中</view>
+    </view>
+
+    <view class='order-partent'>
+      <view class='order'>
+        <view class='order-head'>
+          <text>订单号：123213123123123</text>
+          <text class='order-sate'>配送中</text>
+        </view>
+        <view class='order-content'>
+          <view class='order-content-first'>
+            <image style='width:70px;height:70px' src='/images/icon/water.png'></image>
+            <text>桶装水</text>
+          </view>
+          <view class='order-content-two'>
+            <text>X2</text>
+            <text>共计￥300</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='order-partent'>
+        <view class='order'>
+          <view class='order-head'>
+            <text>订单号：32131231231233</text>
+            <text class='order-sate'>交易成功</text>
+          </view>
+          <view class='order-content'>
+            <view class='order-content-first'>
+              <image style='width:70px;height:70px' src='/images/icon/water.png'></image>
+              <text>桶装水</text>
+            </view>
+            <view class='order-content-two'>
+              <text>X2</text>
+              <text>共计￥300</text>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

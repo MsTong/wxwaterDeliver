@@ -1,0 +1,42 @@
+/* pages/setting/setPhone/setPhone.wxss */
+.setPhone {
+  padding: 2vh 6vw;
+  margin-top: 5vh;
+}
+.setPhone-item {
+  width: 100%;
+  height: 6vh;
+  line-height: 6vh;
+  padding-bottom: 5vh;
+}
+.getcode {
+  font-size: 4vw;
+  color: #2d8cf0;
+  padding-left: 2vw;
+}
+.setPhone-item input {
+  width: 45vw;
+  height: 6vh;
+  line-height: 4vh;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+}
+.btn-area {
+  margin: 8vh 10vw;
+  overflow: hidden;
+}
+.btn-area button {
+  width:25vw;
+  height: 6vh;
+  border-radius: 5px;
+  background: #2d8cf0;
+  line-height: 6vh;
+  color: #fff;
+  font-size: 5vw;
+  margin-left: 15vw;
+  float: left;
+}
+.btn-area button:first-child {
+margin: 0;
+
+}

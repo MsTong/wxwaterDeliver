@@ -1,0 +1,71 @@
+.form {
+  position: relative;
+  font-size:14px;
+  font-family:'PingFangSC-Regular';
+  font-weight:400;
+  color:rgba(51,51,51,1);
+}
+.form-item:first-child {
+  border-top: 1px solid rgba(238,238,238,1);
+}
+.form-item {
+  position: relative;
+  padding: 0 4%;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid rgba(238,238,238,1);
+}
+.form-item-enterIcon {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  width: 15px;
+  height: 15px;
+}
+.form-item-title {
+  float: left;
+  width: 18%;
+}
+.form-item input{
+  float: left;
+  width: 82%;
+  height: 45px;
+  line-height: 45px;
+  
+}
+.enterIcon {
+  width: 4vw;
+  height: 4vw;
+  margin: auto;
+  position: absolute;
+  right: 6vw;
+  top:2.4vh;
+}
+.saveBtn{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 92%;
+  /* height:40px;
+  line-height: 40px; */
+  border-radius:20px;
+  margin: 4%;
+  
+}
+.saveBtn button{
+  display: inline-block;
+  width: 100%;
+  background: #2d86f0;
+  color: #fff;
+  height:40px;
+  line-height: 40px;
+  border-radius:20px;
+  margin: 0;
+  padding: 0;
+}
+.saveBtn button.delete {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  margin-top: 10px;
+}

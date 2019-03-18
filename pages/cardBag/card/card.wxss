@@ -1,0 +1,62 @@
+/* pages/cardBag/card/card.wxss */
+.card {
+  width: 100vw;
+  padding: 0 6vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-top: 1px solid #f5f5f5;
+}
+.card-item {
+  margin-top: 2vh;
+  padding: 0 3vw 2vh 3vw;
+  border-bottom: 1px solid #f5f5f5;
+  overflow: hidden;
+}
+.card-item-left {
+  width: 40%;
+  float: left;
+}
+.money {
+  color: red;
+  font-size: 8vw;
+  font-family: 'PingFangSC-Semibold';
+  font-weight: 600;
+}
+.money text:last-child {
+  font-weight: 400;
+  font-size: 4vw;
+  padding-left: 2vw;
+}
+.limitCount {
+  font-size: 4vw;
+}
+.card-item-right {
+  width: 60%;
+  float: left;
+}
+.title {
+  font-size: 5vw;
+  font-family: 'PingFangSC-Semibold';
+  font-weight: 600;
+}
+.date {
+  padding-top: 2.5vh;
+ font-size: 4vw;
+}
+.card-btn {
+  overflow: hidden;
+  width: 100%;
+}
+.card-btn button{
+  width: 20vw;
+  height: 4vh;
+  background: #ff9900;
+  border-radius: 4px;
+  font-size: 3vw;
+  text-align: center;
+  line-height: 4vh;
+  margin: 1.5vh 0;
+  float: right;
+  color: #fff;
+  padding: 0;
+}

@@ -1,0 +1,15 @@
+<view class="container">
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" style="height:{{imageHeight}}px;weight={{imageWidth}}px">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item >
+        <image src="{{item}}" class="slide-image" style='height:380px'/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="footer">
+    <view>地址：广东广州</view>
+    <view>电话：137XXXX</view>
+    <view>最终解释权归公司所有</view>
+  </view>
+
+</view>

@@ -1,0 +1,15 @@
+<view class='member'>
+  <view class='member-item'>
+   <view class='member-item-content'>
+    <image  class='f-l itemLeft' src='/images/icon/member.jpg'></image>
+    <view class='f-l itemRight'>
+      <text>{{ nowItem.title }}</text>
+      <text>{{ nowItem.subtitle }}</text>
+      <text>{{ nowItem.money }}</text>
+    </view>
+    </view>
+    <view class='member-item-btn'>
+    <button bindtap='toPurchase' data-nowItem='{{item}}'>立即购买</button>
+    </view>
+  </view>
+</view>

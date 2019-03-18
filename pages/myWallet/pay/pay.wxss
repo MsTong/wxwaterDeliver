@@ -1,0 +1,27 @@
+/* pages/myWallet/pay/pay.wxss */
+.pay {
+  border-top: 1px solid #f5f5f5;
+  padding-top: 8vh;
+  color: #333;
+}
+.pay-money {
+  width: 100vw;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  font-size: 8vw;
+  color: red;
+  font-weight: 600;
+  padding-bottom: 5vh;
+}
+.pay-title {
+  font-size: 4vw;
+  line-height: 6vh;
+  padding-left: 5vw;
+  font-weight: 500;
+}
+.pay-btn {
+  margin-top: 4vh;
+  width: 70vw;
+  margin: 10vh 15vw;
+}

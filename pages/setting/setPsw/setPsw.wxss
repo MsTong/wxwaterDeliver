@@ -1,0 +1,57 @@
+/* pages/setting/setPsw/setPsw.wxss */
+
+.setPsw {
+  padding: 2vh 6vw;
+  color: #333;
+}
+.setPsw-item {
+  width: 88vw;
+  overflow: hidden;
+  padding: 0 2vh;
+  height: 6vh;
+  line-height: 6vh;
+  margin-bottom: 4vh;
+}
+
+.setPsw-item > text {
+  font-size: 4vw;
+}
+
+.setPsw-item > input {
+  font-size: 4vw;
+  width: 40vw;
+  height: 6vh;
+  line-height: 6vh;
+  box-sizing: border-box;
+  padding: 1vh 2vw;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  margin-left: 2vw;
+}
+
+.getCode {
+  padding-left: 2vw;
+  font-size: 3vw;
+  color: #5cadff;
+}
+
+.setPsw-btn {
+  margin: 8vh 10vw;
+  overflow: hidden;
+}
+
+.setPsw-btn button {
+  width: 25vw;
+  height: 6vh;
+  border-radius: 5px;
+  background: #2d8cf0;
+  line-height: 6vh;
+  color: #fff;
+  font-size: 5vw;
+  margin-left: 15vw;
+  float: left;
+}
+
+.setPsw-btn button:first-child {
+  margin: 0;
+}

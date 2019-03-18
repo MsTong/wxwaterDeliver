@@ -1,0 +1,19 @@
+<!--pages/setting/setPhone/setPhone.wxml-->
+<view class='setPhone'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='setPhone-item'>
+        <text class='f-l'>手机号：</text>
+        <input class='f-l' value='{{ phoneNumber }}' bindinput='handleInputChange' data-item='phoneNumber'></input>
+        <text class='f-l getcode' bindtap='getcode'> 获取验证码</text>
+    </view>
+     <view class='setPhone-item'>
+        <text class='f-l' bindinput='handleInputChange' data-item='code'>验证码：</text>
+        <input class='f-l' value='{{ code }}' bindinput='handleInputChange'></input>
+    </view>
+    <view class="btn-area">
+      <button form-type="reset">取消</button>
+      <button form-type="submit">确认</button>
+    </view>
+  </form>
+</view>
+<i-toast id="toast"/>

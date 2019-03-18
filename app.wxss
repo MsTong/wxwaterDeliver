@@ -1,0 +1,58 @@
+/*
+订单
+*/
+
+.head-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  margin: 0 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.order-partent {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.order-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order {
+  /* border-bottom: 1px solid #c8c8cd; */
+}
+
+.order-sate {
+  color: yellow;
+}
+
+.order-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-content-first {
+  display: flex;
+}
+.f-l {
+  float: left;
+}
+
+.order-content-two {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.order-content-two text:first {
+  display: flex;
+  flex-direction: column;
+}

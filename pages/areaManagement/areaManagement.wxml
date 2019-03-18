@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="profile">
+    <view class='management'>
+      <view class='management-left'>
+        <text>xxx区xxx路</text>
+      </view>
+      <view class='management-right'>
+        <view>
+        <button bindtap='toDOManagement'></button>
+          <!-- <text class='management-right-btn'>管理配送员</text> -->
+        </view>
+        <!-- <view class='management-right-btns'>
+          <image src='/images/icon/delete.png' class="btnIcon"></image> -->
+          <!-- <text class='editBtn'>编辑</text> -->
+          <!-- <image src='/images/icon/delete.png'></image> -->
+          <!-- <text class='deleteBtn' class='btnIcon'>删除</text> -->
+        <!-- </view> -->
+      </view>
+    </view>
+    <view>
+    </view>
+    <view>
+      <button bindtap="addNewArea" class='management-addBtn'>添加新区域</button>
+    </view>
+  </view>
+</view>

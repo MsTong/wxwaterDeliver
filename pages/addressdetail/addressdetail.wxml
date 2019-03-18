@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="profile">
+    <form bindsubmit="formSubmit" bindreset="formReset" class='form'>
+      <view class='form-item'>
+        <view class='form-item-title'>
+          收货人：
+        </view>
+        <input name="name" autofocus value="{{ nowAddress.name }}" bindinput="handleInputChange" />
+      </view>
+      <view class='form-item'>
+        <view class='form-item-title'>
+          <text space="emsp">手 机：</text>
+        </view>
+        <input name="phone" value="{{ nowAddress.phone }}" autofocus bindinput="handleInputChange" />
+      </view>
+      <view class='form-item' bindtap='selectRegion'>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            <text space="emsp">区 域：</text>{{region[0]}} {{region[1]}} {{region[2]}}       <image class='enterIcon' src='/images/icon/right-arrow.png'></image>
+          </view>
+        </picker>
+      </view>
+      <view class='form-item'>
+        <view class='form-item-title'>
+          <text space="emsp">地 址：</text>
+        </view>
+        <input name="address" value="{{ nowAddress.address }}" autofocus bindinput="handleInputChange" />
+      </view>
+      <view class="saveBtn">
+        <button form-type="submit">保存并使用</button>
+        <button bindtap='showTips' class='delete' wx:if='{{ !add }}'>删除</button>
+      </view>
+    </form>
+  </view>
+  <i-modal title="是否删除改地址" visible="{{ showTips }}" actions="{{ actions }}" bind:click="doDelete">
+  </i-modal>
+</view>
+<i-toast id="toast"/>

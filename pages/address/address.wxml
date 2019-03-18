@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="profile">
+    <view class='address' bindtap='setDefault' wx:for='{{addressList}}' wx:key='{{index}}' data-default="{{index}}">
+      <view class='address-user'>
+        <text class='address-same'>{{item.name}}</text>
+        <text class='address-same'>{{item.phone}}<text  class='address-default' wx:if='{{default===index}}'>(默认地址)</text></text>
+      </view>
+      <view class='address-address'>
+        <text>地址：{{item.address}}</text>
+      </view>
+      <view data-address="{{item}}" class='address-editor' catchtap='todetail'>
+        <i-icon type="editor" size="20" color="#80848f"></i-icon>
+      </view>
+    </view>
+    <view class='toAdd'>
+    <i-button bind:click="toAdd" type="primary" shape="circle" size="large">新增配送地址</i-button>
+    </view>
+  </view>
+</view>

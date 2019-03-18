@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+        "i-button": "../../../dist/button/index",
+        "i-radio-group": "../../../dist/radio-group/index",
+        "i-radio": "../../../dist/radio/index",
+    "i-toast": "../../../dist/toast/index"
+  },
+    "navigationBarTitleText": "充值支付"
+}

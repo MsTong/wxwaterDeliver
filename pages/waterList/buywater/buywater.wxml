@@ -1,0 +1,45 @@
+<view class="container">
+  <view class='waters'>
+    <view class='waters-content'>
+      <view class='waters-content-item'>
+        <view class='waters-content-left'>
+          <image src='/images/icon/water.png'></image>
+          <view class='waters-content-left-info'>
+            <text>{{ type }}</text>
+            <text>{{ type }}</text>
+            <text>￥{{ money }}</text>
+          </view>
+        </view>
+        <view class='waters-content-right'>
+          <view class='waters-content-right-input'>
+            <i-input-number value="{{ count }}" min="0" max="100" bindchange="changeCount" />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='waters-content-payInfo'>
+      <i-cell title="配送费：" value="{{ payInfo.deliverMoney }}"></i-cell>
+      <i-cell title="小计：" value="{{ payInfo.countMoney }}"></i-cell>
+      <i-cell title="抵用券：" is-link value="{{ payInfo.voucherMoney }}"></i-cell>
+      <i-cell title="积分兑换：" url='' is-link value="{{ payInfo.pointsMoney }}"></i-cell>
+      <i-cell title="实付金额：" url='' value="{{ payInfo.payMoney }}"></i-cell>
+    </view>
+    <view class='waters-content-addressInfo'>
+      <view class='deliveraAddress'>
+        <text>送水地址：</text>
+        <text>{{addressInfo.defaultAddress.address}}</text>
+      </view>
+      <view class='deliverDate'>
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="picker">
+              送水时间： {{date}}
+            </view>
+          </picker>
+      </view>
+    </view>
+  </view>
+  <view class='waters-footer'>
+    <i-button bind:click="toOrder" type="primary" shape="circle" size="large">确认</i-button>
+  </view>
+</view>
+<i-toast id="toast" />

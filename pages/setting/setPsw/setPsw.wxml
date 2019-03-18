@@ -1,0 +1,32 @@
+<view class='setPsw'>
+  <form bindsubmit="formSubmit" bindreset="formReset" class='form'>
+  <view class='form'>
+   <view class='setPsw-item' wx:if='{{ title }}'>
+      <text class='f-l'>原始密码:</text>
+      <input class='f-l' value='{{ oldPsw }}' name='oldPsw' password></input>
+    </view>
+    <view class='setPsw-item'>
+      <text class='f-l' space='ensp'>新 密 码:</text>
+      <input class='f-l' value='{{ newPsw }}' name='newPsw' password></input>
+    </view>
+    <view class='setPsw-item'>
+      <text class='f-l'>确认密码:</text>
+      <input class='f-l' value='{{ secPsw }}' name='secPsw' password></input>
+    </view>
+    <view class='setPsw-item'>
+      <text class='f-l' space='ensp'>手 机 号:</text>
+      <input class='f-l' value='{{ phone }}' name='phone'></input>
+      <text class='f-l getCode' bindtap='getCode'>获取验证码</text>
+    </view>
+    <view class='setPsw-item'>
+      <text class='f-l' space='ensp'>验 证 码:</text>
+      <input class='f-l' value='{{ code }}' name='code'></input>
+    </view>
+    <view class='setPsw-btn'>
+      <button form-type="reset">取消</button>
+      <button form-type="submit">确认</button>
+    </view>
+  </view>
+  </form>
+</view>
+<i-toast id="toast"/>

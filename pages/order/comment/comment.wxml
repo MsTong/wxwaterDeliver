@@ -1,0 +1,23 @@
+<!--pages/order/comment/comment.wxml-->
+<view class='comment'>
+  <view class='comment-rate'>
+    <view class='comment-rate-item'>
+      <text>商品评价</text>
+      <i-rate bind:change="onChange" value="{{proRate}}" size="28" data-item='proRate'>
+      </i-rate>
+    </view>
+    <view class='comment-rate-item'>
+      <text>配送评价</text>
+      <i-rate bind:change="onChange" value="{{sendRate}}" size="28" data-item='sendRate'>
+      </i-rate>
+    </view>
+
+  </view>
+  <view class='comment-text'>
+    <textarea placeholder="说说你的看法~" placeholder-style="color:#999999;" value='{{ commentText }}' bindinput="onChange" data-item='commentText'/>
+  </view>
+  <view class='comment-btn'>
+   <i-button bind:click="doSure" type="primary" shape="circle">确认提交</i-button>
+  </view>
+</view>
+<i-toast id="toast" />

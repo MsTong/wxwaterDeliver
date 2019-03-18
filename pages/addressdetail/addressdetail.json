@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "i-panel": "../../dist/panel/index",
+    "i-input": "../../dist/input/index",
+    "i-icon":"../../dist/icon/index",
+    "i-button": "../../dist/button/index",
+    "i-toast": "../../dist/toast/index",
+    "i-modal": "../../dist/modal/index"
+  },
+  "navigationBarTitleText": "编辑配送地址"
+}

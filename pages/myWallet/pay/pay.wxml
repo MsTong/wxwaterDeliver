@@ -1,0 +1,14 @@
+<!--pages/myWallet/pay/pay.wxml-->
+<view class='pay'>
+  <view class='pay-money'><text>￥{{ money }}</text></view>
+  <view class='pay-title'><text>请选择支付方式：</text></view>
+  <view class='pay-item'>
+  <i-radio-group current="{{current}}" bindchange="handleSelect">
+        <i-radio wx:for="{{selectArr}}" position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}">
+        </i-radio>
+    </i-radio-group>
+  </view>
+  <view class='pay-btn'>
+<i-button bind:click="toPay" type="warning" shape="circle">确认支付</i-button>
+</view>
+</view>

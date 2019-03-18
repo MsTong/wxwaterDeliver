@@ -1,0 +1,16 @@
+<view class='recharge'>
+<view class='recharge-item'>
+<i-radio-group current="{{current}}" bindchange="handleSelect">
+        <i-radio wx:for="{{selectArr}}" position="{{position}}" wx:key="{{item.id}}" value="{{item.name}}">
+        </i-radio>
+    </i-radio-group>
+    <view class='recharge-item-input'>
+    <input placeholder='请输入30的倍数' disabled='{{ canInput }}' bindinput='doInput' value='{{ inputValue }}'></input>
+    </view>
+</view>
+<view class='recharge-btn'>
+<i-button bind:click="toPay" type="warning" shape="circle">￥{{ money }}确认支付</i-button>
+</view>
+<i-toast id="toast"/>
+</view>
+

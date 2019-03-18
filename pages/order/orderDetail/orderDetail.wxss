@@ -1,0 +1,123 @@
+/* pages/order/orderDetail/orderDetail.wxss */
+.orderAddress {
+  width: 100vw;
+  padding:2vh 6vw;
+  border-bottom: 2vw solid #F5F5F5;
+  border-top:1px solid #F5F5F5;
+}
+.userInfo {
+  height:3vh;
+  line-height:3vh;
+  font-size:4vw;
+  font-family:'PingFangSC-Semibold';
+  font-weight:600;
+  color:rgba(51,51,51,1);
+  padding-bottom: 1vh;
+}
+.userName {
+  padding-right: 2.6vw;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.userAddress {
+  height:3vh;
+  line-height:3vh;
+  font-size:3.2vw;
+  font-family:'PingFangSC-Regular';
+  font-weight:400;
+  color:rgba(102,102,102,1);
+}
+.orderDetail {
+  border-bottom: 2vw solid #F5F5F5;
+
+}
+.order-content-item {
+  width:88vw;
+  padding:0 6vw;
+  display: block;
+}
+.order-content-item-title{
+  padding-top: 1vh;
+  height: 6vh;
+  line-height: 6vh;
+  font-size:4vw;
+  font-family:'PingFangSC-Semibold';
+  font-weight:600;
+}
+.order-content-item-title text:last-child {
+  float: right;
+  color: #F3344A;
+  font-family:'PingFangSC-Regular';
+  font-weight:400;
+}
+.order-content-item-info {
+  overflow: hidden;
+  position: relative;
+}
+.img {
+  float: left;
+  width: 24vw;
+  height: 24vw;
+}
+.info {
+  float: left;
+  padding-left: 2vw;
+}
+.orderType {
+  font-size:5vw;
+  font-family:'PingFangSC-Regular';
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  position: relative;
+  top: 2vh;
+}
+.count {
+  position: absolute;
+  right: 0;
+  top: 2vh;
+  font-family:'PingFangSC-Regular';
+  font-weight:400;
+}
+.allPrice {
+  position: absolute;
+  right: 0;
+  bottom: 2vh;
+  font-size: 3.8vw;
+}
+.allPrice-num {
+  font-size: 4.5vw;
+}
+.orderInfo {
+padding: 3vh 6vw;
+height: 20vh;
+}
+.orderInfo-item {
+  height:3vh;
+  font-size:4vw;
+  padding-bottom: 1.5vh;
+  padding-right: 2vw;
+  font-family:'PingFangSC-Regular';
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:3vh;
+}
+.orderBtn {
+  width: 100%;
+  margin-bottom: 2.3vh;
+  overflow: hidden;
+}
+.orderBtn button {
+  float: right;
+  height: 5vh;
+  width: 21vw;
+  line-height: 5vh;
+  text-align: center;
+  font-size: 3.6vw;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  background: #2d8cf0;
+  color: #fff;
+  margin-right: 6vw;
+}

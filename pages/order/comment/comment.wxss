@@ -1,0 +1,35 @@
+.comment {
+  font-family:'PingFangSC-Regular';
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  padding-top: 4vh;
+}
+.comment-rate {
+  padding:3vh 8vw;
+}
+.comment-rate-item {
+  height:3vh;
+  font-size:5vw;
+  line-height:3vh;
+  padding-bottom: 5vh;
+}
+ .comment-rate-item>text{
+  padding-right: 2vw;
+  position: relative;
+  top: 1.2vh;
+  float: left;
+ }
+.comment-text {
+  border: 1px solid #F5F5F5;
+  height: 20vh;
+  margin:2vh 6vw;
+  font-size: 4.5vw;
+  padding: 3vw;
+
+}
+.comment-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}

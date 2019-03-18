@@ -1,0 +1,50 @@
+<!--pages/order/orderDetail/orderDetail.wxml-->
+<view class='container'>
+  <view class='orderAddress'>
+    <view class='userInfo'>
+      <text class='userName'>佟领</text><text class='userPhone'>1234565</text>
+    </view>
+      <view class='userAddress'>1111111</view>
+  </view>
+  <view class='orderDetail'>
+   <view class='order-content-item'>
+        <view class='order-content-item-title'>
+          <text>订单号：</text>
+          <text>交易成功</text>
+        </view>
+        <view class='order-content-item-info'>
+          <view class='img'>
+            <image style='width:70px;height:70px' src='/images/icon/water.png'></image>
+          </view>
+          <view class='info'>
+            <text class='orderType'> 22 </text>
+            <text class='count'>x 1 </text>
+            <view class='allPrice'>
+              合计：￥
+              <text class='allPrice-num'> 100 </text>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+  <view class='orderInfo'>
+  <view class='orderInfo-item'>
+    <text>空桶回收：</text><text>回收1个空桶，退换X吉币</text>
+  </view>
+  <view class='orderInfo-item'>
+    <text space='emsp'>配送人员：</text><text>佟领 123456767890</text>
+  </view>
+  <view class='orderInfo-item'>
+    <text space='emsp'>下单时间：</text><text>2018-01-11  12:21:20</text>
+  </view>
+  <view class='orderInfo-item'>
+    <text space='emsp'>完成时间：</text><text>2018-01-11  13:21:20</text>
+  </view>
+  </view>
+  <view class='orderBtn'>
+    <button bindtap='makeComment'>
+      评价
+    </button>
+  </view>
+
+</view>

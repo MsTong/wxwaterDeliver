@@ -1,0 +1,38 @@
+<view class="container">
+  <view class='header'>
+    <view class='header-userInfo'>
+      <view class='header-userInfo-image'>
+        <open-data class='userInfo' type="userAvatarUrl" bindgetuserinfo="onGotUserInfo"></open-data>
+      </view>
+      <view class='header-userInfo-name'>
+        <open-data type="userNickName" lang="zh_CN"></open-data>
+      </view>
+    </view>
+    <view class='header-userlevel' bindtap='torecharge'>
+      <view class='header-userlevel-line1'>
+        <image src='/images/mine/level.png'></image>
+        <text>当前会员等级{{level}}</text>
+      </view>
+      <view class='header-userlevel-line2'>
+        <text class='leveltips'>充值成为更高会员有更多服务</text>
+      </view>
+      <view class='header-userlevel-enterIcon' bindtap='enterLevel'>
+        <image src='/images/icon/right-arrow.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+    <view wx:for="{{ contentArr }}" wx:key="index" class='content-item'>
+      <view class='content-item-title'>{{ item.title }}</view>
+      <view wx:for='{{ item.itemArr }}' wx:key="{{ index }}" class='content-item-name' data-item="{{item}}" bindtap='toDetail'>
+        <view class='imageIcon'>
+          <image src='{{ item.imagePath }}'></image>
+        </view>
+        <text>{{ item.itemName }}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<i-modal title="客服电话" visible="{{ visible }}" bind:ok="handleClose" bind:cancel="handleClose">
+    <view>12345678789000</view>
+</i-modal>

@@ -1,0 +1,26 @@
+<!--pages/rechargeList/member/memberPay/memberPay.wxml-->
+<view class='memberPay'>
+<view class='memberPay-header'>
+<view class='f-l iconImage'>
+<image class='f-l' src='/images/icon/member.jpg'></image>
+</view>
+<view class='f-l iconText'>
+<text class='f-l'>请输入支付密码</text>
+</view>
+</view>
+<view class='memberPay-title'>
+<text>{{ nowItem.title }}</text>
+</view>
+<view class='memberPay-money'><text>￥{{ nowItem.money }}</text></view>
+<view class='memberPay-payType'>
+<view class='iconImage f-l'>
+<image class='f-l' src='/images/icon/member.jpg'></image>
+</view>
+<view class='f-l bankName'>
+  <text>广发银行</text>
+</view>
+<view class='f-l enterIcon'>
+  <image src='/images/icon/right-arrow.png'></image>
+</view>
+</view>
+</view>

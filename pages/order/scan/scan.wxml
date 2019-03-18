@@ -1,0 +1,12 @@
+<!--pages/order/scan/scan.wxml-->
+<view class='scan'>
+  <view class='top'>
+    <text>感谢您对我们的支持！</text>
+  </view>
+  <view class='content'>
+  <image src='/images/order/scan.jpg'></image>
+  </view>
+  <view class='footer'>
+    <text>扫描领大奖-红包</text>
+  </view>
+</view>
