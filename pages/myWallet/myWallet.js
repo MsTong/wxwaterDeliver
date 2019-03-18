@@ -1,40 +1,18 @@
-// pages/myWallet/pay/pay.js
+// pages/myWallet/myWallet.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    selectArr: [{
-      id: 1,
-      name: '微信支付',
-    }, {
-      id: 2,
-        name: '支付宝支付'
-    }, {
-      id: 3,
-      name: '银行卡支付'
-    }],
-    current: '微信支付',
-    payType: '',
-    position: 'left',
-    money:1000
-  },
-  handleSelect({ detail = {} }) {
-    this.setData({
-      current: detail.value
-    });
-  },
-    toPay() {
 
-    },
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if(options.money) {
-      this.setData({ 'money': options.money })
-    }
+
   },
 
   /**

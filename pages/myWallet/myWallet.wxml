@@ -1,0 +1,4 @@
+<!--pages/myWallet/myWallet.wxml-->
+<view>
+<text>我的钱包</text>
+</view>

@@ -15,7 +15,10 @@ Page({
       luckyCurrency: 0,
       emptyBarrel: 0,
       allPrice: 10,
-      count: 1
+      count: 1,
+      sendTime:'2018年10月1日',
+      barrelCount: 1
+
     }, {
       orderNo: '12344566777',
       orderType: '桶装水',
@@ -23,7 +26,10 @@ Page({
       luckyCurrency: 0,
       emptyBarrel: 0,
       allPrice: 10,
-      count: 1
+      count: 1,
+      sendTime: '2018年10月2日',
+      barrelCount:1
+
     }, {
       orderNo: '12344566777',
       orderType: '桶装水',
@@ -31,9 +37,22 @@ Page({
       luckyCurrency: 0,
       emptyBarrel: 0,
       allPrice: 10,
-      count: 1
+      count: 1,
+        sendTime: '2018年10月3日',
+        barrelCount: 1
+
+
     }],
     orderList: []
+  },
+  handleDeliver() {
+    //发出配送请求
+  },
+  toOrderDetail() {
+    //传参
+    wx.navigateTo({
+      url: '/pages/order/orderDetail/orderDetail'
+    })
   },
   handleChange({ detail }) {
     this.setData({

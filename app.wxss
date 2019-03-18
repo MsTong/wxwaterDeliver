@@ -44,6 +44,9 @@
 .f-l {
   float: left;
 }
+.f-r {
+  float: right;
+}
 
 .order-content-two {
   display: flex;

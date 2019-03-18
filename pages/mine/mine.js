@@ -1,30 +1,12 @@
 Page({
   data: {
     visible:false,
+    userInfos:{
+      rate:100,
+      region:'天河区'
+    },
     contentArr: [{
-      title: '我的钱包',
-      itemArr: [{
-        itemName: '充值',
-        imagePath: '/images/mine/recharge.png',
-        url:'/pages/myWallet/recharge/recharge'
-      }, {
-        itemName: '余额',
-        imagePath: '/images/mine/balance.png',
-        url: ''
-
-      }, {
-        itemName: '提现',
-        imagePath: '/images/mine/withdraw.png',
-          url: ''
-
-
-      }, {
-        itemName: '扫一扫',
-        imagePath: ''
-
-      }]
-    }, {
-      title: '我的订单',
+      title: '我的配送',
       itemArr: [{
         itemName: '待配送',
         imagePath: '/images/mine/nopay.png',
@@ -38,47 +20,45 @@ Page({
 
 
       }, {
-        itemName: '已完成',
+        itemName: '已配送',
         imagePath: '/images/mine/nosend.png',
           url: '/pages/order/order?current=3'
 
 
       }, {
-        itemName: '全部订单',
+        itemName: '全部配送',
         imagePath: '/images/mine/nopay.png',
           url: '/pages/order/order?current=0'
       }]
     }, {
-      title: '常用服务',
-      itemArr: [{
-        itemName: '卡包',
-        imagePath: '/images/mine/card.png',
-        url: '/pages/cardBag/cardBag'
-      }, {
-        itemName: '积分',
-        imagePath: '/images/mine/integration.png',
-        url:''
-      }, {
-        itemName: '设置',
-        imagePath: '/images/mine/setting.png',
-        url: '/pages/setting/setting'
+        title: '我的工具',
+        itemArr: [{
+          itemName: '扫一扫',
+          imagePath: '/images/mine/sao.png',
+          url: '/pages/scan/scan'
+        }, {
+          itemName: '配送收益',
+          imagePath: '/images/mine/balance.png',
+          url: '/pages/income/income'
 
-      }, {
-        itemName: '客服',
-        imagePath: '/images/mine/service.png',
-          url: ''
-      }]
-    }],
+        }, {
+          itemName: '仓库数据',
+            imagePath: '/images/mine/warehouse.png',
+          url: '/pages/warehouse/warehouse'
+        }]
+      }],
     userInfo: '',
     level:1,
     weight: wx.getSystemInfoSync().windowWidth - 220
   },
-  torecharge() {
-    wx.navigateTo({
-      url: '/pages/rechargeList/rechargeList',
-    })
+  changeregion() {
+    console.log(99)
+    // wx.navigateTo({
+    //   url: '/pages/rechargeList/rechargeList',
+    // })
   },
   onLoad: function (options) {
+    //加载用户信息赋值给userInfo
 
   },
   enterLevel() {

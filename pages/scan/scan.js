@@ -1,30 +1,18 @@
-// pages/rechargeList/rechargeList.js
-let app = getApp()
+// pages/scan/scan.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nowItem:{
-      title:'111',
-      subtitle:'222',
-      money:111,
-      type:'member'
-    }
+
   },
-  toPurchase(event) {
-    wx.navigateTo({
-      url: '/pages/rechargeList/member/memberPay/memberPay'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if(app.data.nowItem) {
-      this.setData({ nowItem: app.data.nowItem})
-    }
+
   },
 
   /**

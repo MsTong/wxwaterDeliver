@@ -1,24 +1,18 @@
-// pages/rechargeList/member/memberPay/memberPay.js
-let app = getApp()
+// pages/income/income.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nowItem:{
-      title:'222',
-      money:100
-    }
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if (app.data.nowItem) {
-      this.setData({ nowItem: app.data.nowItem })
-    }
+
   },
 
   /**

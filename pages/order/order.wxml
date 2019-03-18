@@ -1,12 +1,12 @@
 <view class="container">
   <view class="order">
     <!-- <view class='order-header'> -->
-      <i-tabs current="{{ current }}" bindchange="handleChange">
-        <i-tab key="0" title="全部"></i-tab>
-        <i-tab key="1" title="待配送"></i-tab>
-        <i-tab key="2" title="配送中"></i-tab>
-        <i-tab key="3" title="已完成"></i-tab>
-      </i-tabs>
+    <i-tabs current="{{ current }}" bindchange="handleChange">
+      <i-tab key="0" title="全部"></i-tab>
+      <i-tab key="1" title="待配送"></i-tab>
+      <i-tab key="2" title="配送中"></i-tab>
+      <i-tab key="3" title="已完成"></i-tab>
+    </i-tabs>
     <!-- </view> -->
     <view class='order-content' wx:for='{{ orderList }}' wx:key='{{ index }}' bindtap='toDetail'>
       <view class='order-content-item'>
@@ -24,10 +24,20 @@
           <view class='info'>
             <text class='orderType'>{{ item.orderType }}</text>
             <text class='count'>x{{ item.count }}</text>
-            <view class='allPrice'>
-              合计：￥
-              <text class='allPrice-num'>{{ item.allPrice }}</text>
-            </view>
+          </view>
+        </view>
+        <view class='order-content-item-btn'>
+          <view class='f-l leftInfo'>
+          <view>
+            <text>配送时间：{{ item.sendTime }}</text>
+          </view>
+           <view class='orderStatus' wx:if='{{ item.orderStatus==3 }}'>
+            <text>空桶回收：</text><text class='redFont'>空桶已回收{{ item.barrelCount }}个</text>
+           </view>
+          </view>
+          <view class='f-r optionBtn'>
+            <button class='optionBtn' wx:if='{{ item.orderStatus==1 }}' bindtap='handleDeliver'>马上配送</button>
+            <button class='optionBtn' wx:if='{{ item.orderStatus==3 }}' bindtap='toOrderDetail'>详情</button>
           </view>
         </view>
       </view>

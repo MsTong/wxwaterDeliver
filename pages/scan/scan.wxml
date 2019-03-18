@@ -1,0 +1,4 @@
+<!--pages/scan/scan.wxml-->
+<view>
+<text>扫一扫</text>
+</view>

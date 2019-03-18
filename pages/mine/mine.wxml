@@ -8,16 +8,19 @@
         <open-data type="userNickName" lang="zh_CN"></open-data>
       </view>
     </view>
-    <view class='header-userlevel' bindtap='torecharge'>
+    <view class='header-userlevel' bindtap='changeregion'>
       <view class='header-userlevel-line1'>
-        <image src='/images/mine/level.png'></image>
-        <text>当前会员等级{{level}}</text>
+        <image src='/images/mine/good.png'></image>
+        <view class='textBlock'>
+          <text>我的评分：{{ userInfos.rate }}</text>
+          <text>所属区域：{{userInfos.region}}</text>
+        </view>
+        <view class='header-userlevel-enterIcon' bindtap='enterLevel'>
+          <image src='/images/icon/right-arrow.png'></image>
+        </view>
       </view>
       <view class='header-userlevel-line2'>
         <text class='leveltips'>充值成为更高会员有更多服务</text>
-      </view>
-      <view class='header-userlevel-enterIcon' bindtap='enterLevel'>
-        <image src='/images/icon/right-arrow.png'></image>
       </view>
     </view>
   </view>
@@ -31,8 +34,14 @@
         <text>{{ item.itemName }}</text>
       </view>
     </view>
+    <view class='myWallet'>
+       <i-cell title="钱包" is-link url="/pages/myWallet/myWallet"></i-cell>
+    </view>
+    <view class='mySetting'>
+       <i-cell title="设置" is-link url="/pages/setting/setting"></i-cell>
+    </view>
   </view>
 </view>
 <i-modal title="客服电话" visible="{{ visible }}" bind:ok="handleClose" bind:cancel="handleClose">
-    <view>12345678789000</view>
+  <view>12345678789000</view>
 </i-modal>

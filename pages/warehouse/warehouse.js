@@ -1,4 +1,4 @@
-// pages/order/waitorder/waitorder.js
+// pages/warehouse/warehouse.js
 Page({
 
   /**

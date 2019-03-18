@@ -1,28 +1,24 @@
 {
   "debug": true,
   "pages": [
+    "pages/order/order",
     "pages/mine/mine",
-    "pages/rechargeList/rechargeList",
-    "pages/rechargeList/member/memberPay/memberPay",
-    "pages/myWallet/pay/pay",
-    "pages/myWallet/recharge/recharge",
+    "pages/myWallet/myWallet",
     "pages/setting/setting",
     "pages/setting/setPsw/setPsw",
     "pages/setting/setPhone/setPhone",
-    "pages/cardBag/card/card",
-    "pages/cardBag/cardBag",
     "pages/order/comment/comment",
     "pages/order/scan/scan",
     "pages/order/orderDetail/orderDetail",
     "pages/addressdetail/addressdetail",
-    "pages/order/order",
-    "pages/order/waitorder/waitorder",
     "pages/address/address",
-    "pages/index/index",
     "pages/areaManagement/areaManagement",
     "pages/order/doingorder/doingorder",
     "pages/waterList/buywater/buywater",
-    "pages/waterList/waterList"
+    "pages/waterList/waterList",
+    "pages/scan/scan",
+    "pages/income/income",
+    "pages/warehouse/warehouse"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -36,13 +32,7 @@
     "selectedColor": "red",
     "list": [
       {
-        "text": "首页",
-        "pagePath": "pages/index/index",
-        "iconPath": "images/icon/home.png",
-        "selectedIconPath": "images/icon/home-actived.png"
-      },
-      {
-        "text": "订水",
+        "text": "订单",
         "pagePath": "pages/waterList/waterList",
         "iconPath": "images/icon/cart.png",
         "selectedIconPath": "images/icon/cart-actived.png"

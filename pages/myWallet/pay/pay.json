@@ -1,8 +1,0 @@
-{
-  "usingComponents": {
-    "i-button": "../../../dist/button/index",
-    "i-radio-group": "../../../dist/radio-group/index",
-    "i-radio": "../../../dist/radio/index"
-  },
-  "navigationBarTitleText": "收银台支付"
-}
