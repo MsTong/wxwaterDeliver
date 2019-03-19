@@ -44,12 +44,6 @@
   font-family:'PingFangSC-Semibold';
   font-weight:600;
 }
-.order-content-item-title text:last-child {
-  float: right;
-  color: #F3344A;
-  font-family:'PingFangSC-Regular';
-  font-weight:400;
-}
 .order-content-item-info {
   overflow: hidden;
   position: relative;
@@ -120,4 +114,12 @@ height: 20vh;
   background: #2d8cf0;
   color: #fff;
   margin-right: 6vw;
+}
+.redFont {
+  color: red;
+}
+.sure-btn {
+  margin-top: 4vh;
+  width: 70vw;
+  margin: 10vh 15vw;
 }

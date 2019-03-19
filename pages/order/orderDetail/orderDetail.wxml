@@ -2,26 +2,26 @@
 <view class='container'>
   <view class='orderAddress'>
     <view class='userInfo'>
-      <text class='userName'>佟领</text><text class='userPhone'>1234565</text>
+      <text class='userName'>{{nowOrder.addressInfo.name}}</text><text class='userPhone'>{{nowOrder.addressInfo.phone}}</text>
     </view>
-      <view class='userAddress'>1111111</view>
+      <view class='userAddress'>{{nowOrder.addressInfo.address}}</view>
   </view>
   <view class='orderDetail'>
    <view class='order-content-item'>
         <view class='order-content-item-title'>
-          <text>订单号：</text>
-          <text>交易成功</text>
+          <text class='orderNo'>订单号：{{nowOrder.orderInfo.orderNo }}</text>
+          
         </view>
         <view class='order-content-item-info'>
           <view class='img'>
             <image style='width:70px;height:70px' src='/images/icon/water.png'></image>
           </view>
           <view class='info'>
-            <text class='orderType'> 22 </text>
-            <text class='count'>x 1 </text>
+            <text class='orderType'>{{ nowOrder.orderInfo.orderType }}</text>
+            <text class='count'>x {{ nowOrder.orderInfo.count }} </text>
             <view class='allPrice'>
               合计：￥
-              <text class='allPrice-num'> 100 </text>
+              <text class='allPrice-num'> {{ nowOrder.orderInfo.allPrice }} </text>
             </view>
           </view>
         </view>
@@ -29,22 +29,22 @@
   </view>
   <view class='orderInfo'>
   <view class='orderInfo-item'>
-    <text>空桶回收：</text><text>回收1个空桶，退换X吉币</text>
+    <text space='emsp'>下单时间：</text><text>{{ nowOrder.orderInfo.bookDate }}</text>
   </view>
   <view class='orderInfo-item'>
-    <text space='emsp'>配送人员：</text><text>佟领 123456767890</text>
+    <text space='emsp'>配送时间：</text><text>{{ nowOrder.orderInfo.sendDate }}</text>
   </view>
   <view class='orderInfo-item'>
-    <text space='emsp'>下单时间：</text><text>2018-01-11  12:21:20</text>
+    <text space='emsp'>配送收益：</text><text class='redFont'>￥{{ nowOrder.orderInfo.income }}</text>
   </view>
   <view class='orderInfo-item'>
-    <text space='emsp'>完成时间：</text><text>2018-01-11  13:21:20</text>
+    <text space='emsp'>订单状态：</text>
+    <text wx:if='{{ nowOrder.orderInfo.orderStatus==3 }}' class='redFont'>交易成功</text>
+    <text wx:if='{{ nowOrder.orderInfo.orderStatus==2 }}' class='redFont'>配送中</text>               <text wx:if='{{ nowOrder.orderInfo.orderStatus==1 }}' class='redFont'>待配送</text>
   </view>
   </view>
-  <view class='orderBtn'>
-    <button bindtap='makeComment'>
-      评价
-    </button>
-  </view>
+  <view class='sure-btn' wx:if='{{ nowOrder.orderInfo.orderStatus==2 }}'>
+<i-button bind:click="handleSend" type="warning" shape="circle">扫一扫确认送达</i-button>
+</view>
 
 </view>

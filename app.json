@@ -1,19 +1,17 @@
 {
   "debug": true,
   "pages": [
-    "pages/order/order",
     "pages/mine/mine",
+    "pages/order/order",
     "pages/myWallet/myWallet",
     "pages/setting/setting",
     "pages/setting/setPsw/setPsw",
     "pages/setting/setPhone/setPhone",
-    "pages/order/comment/comment",
     "pages/order/scan/scan",
     "pages/order/orderDetail/orderDetail",
     "pages/addressdetail/addressdetail",
     "pages/address/address",
     "pages/areaManagement/areaManagement",
-    "pages/order/doingorder/doingorder",
     "pages/waterList/buywater/buywater",
     "pages/waterList/waterList",
     "pages/scan/scan",
@@ -33,7 +31,7 @@
     "list": [
       {
         "text": "订单",
-        "pagePath": "pages/waterList/waterList",
+        "pagePath": "pages/order/order",
         "iconPath": "images/icon/cart.png",
         "selectedIconPath": "images/icon/cart-actived.png"
       },

@@ -1,6 +1,9 @@
 // pages/order/order.js
-const { $Toast } = require('../../dist/base/index');
+const {
+  $Toast
+} = require('../../dist/base/index');
 const api = require('../../utils/api.js')
+let app = getApp()
 Page({
 
   /**
@@ -9,52 +12,80 @@ Page({
   data: {
     current: '0',
     apiDataList: [{
-      orderNo: '12344566777',
-      orderType: '桶装水',
-      orderStatus: 3,
-      luckyCurrency: 0,
-      emptyBarrel: 0,
-      allPrice: 10,
-      count: 1,
-      sendTime:'2018年10月1日',
-      barrelCount: 1
-
+      orderInfo: {
+        orderNo: '12344566777',
+        orderType: '桶装水',
+        orderStatus: 3,
+        luckyCurrency: 0,
+        emptyBarrel: 0,
+        allPrice: 10,
+        count: 1,
+        sendTime: '2018年10月1日',
+        barrelCount: 1,
+        income:22
+      },
+      addressInfo: {
+        name: '佟领',
+        phone: '1234565666',
+        address: '四合院'
+      }
     }, {
-      orderNo: '12344566777',
-      orderType: '桶装水',
-      orderStatus: 1,
-      luckyCurrency: 0,
-      emptyBarrel: 0,
-      allPrice: 10,
-      count: 1,
-      sendTime: '2018年10月2日',
-      barrelCount:1
-
+      orderInfo: {
+        orderNo: '12344566777',
+        orderType: '桶装水',
+        orderStatus: 1,
+        luckyCurrency: 0,
+        emptyBarrel: 0,
+        allPrice: 10,
+        count: 1,
+        sendTime: '2018年10月2日',
+        barrelCount: 1,
+        income: 22
+      },
+      addressInfo: {
+        name: '佟领',
+        phone: '1234565666',
+        address: '四合院'
+      }
     }, {
-      orderNo: '12344566777',
-      orderType: '桶装水',
-      orderStatus: 2,
-      luckyCurrency: 0,
-      emptyBarrel: 0,
-      allPrice: 10,
-      count: 1,
+      orderInfo: {
+        orderNo: '12344566777',
+        orderType: '桶装水',
+        orderStatus: 2,
+        luckyCurrency: 0,
+        emptyBarrel: 0,
+        allPrice: 10,
+        count: 1,
         sendTime: '2018年10月3日',
-        barrelCount: 1
-
-
+        barrelCount: 1,
+        income: 22
+      },
+      addressInfo: {
+        name: '佟领',
+        phone: '1234565666',
+        address: '四合院'
+      }
     }],
     orderList: []
   },
   handleDeliver() {
+    console.log(9)
+    wx.navigateTo({
+      url: '/pages/order/order'
+    })
     //发出配送请求
   },
-  toOrderDetail() {
+  toOrderDetail(e) {
     //传参
+    console.log(e)
+    app.data.nowOrder = e.currentTarget.dataset.noworder
     wx.navigateTo({
       url: '/pages/order/orderDetail/orderDetail'
     })
   },
-  handleChange({ detail }) {
+  handleChange({
+    detail
+  }) {
     this.setData({
       current: detail.key
     });
@@ -78,9 +109,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     let current = options.current || 0
-    this.setData({ current: options.current })
     this.setData({
       current: current
     });
@@ -108,49 +138,49 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

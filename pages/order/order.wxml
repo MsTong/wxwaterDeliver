@@ -11,33 +11,33 @@
     <view class='order-content' wx:for='{{ orderList }}' wx:key='{{ index }}' bindtap='toDetail'>
       <view class='order-content-item'>
         <view class='order-content-item-title'>
-          <text>订单号：{{ item.orderNo }}</text>
-          <text>{{ item.orderStatus }}</text>
-          <text wx:if='{{item.orderStatus==1}}'>待配送</text>
-          <text wx:if='{{item.orderStatus==2}}'>配送中</text>
-          <text wx:if='{{item.orderStatus==3}}'>交易成功</text>
+          <text>订单号：{{ item.orderInfo.orderNo }}</text>
+          <text>{{ item.orderInfo.orderStatus }}</text>
+          <text wx:if='{{item.orderInfo.orderStatus==1}}'>待配送</text>
+          <text wx:if='{{item.orderInfo.orderStatus==2}}'>配送中</text>
+          <text wx:if='{{item.orderInfo.orderStatus==3}}'>交易成功</text>
         </view>
         <view class='order-content-item-info'>
           <view class='img'>
             <image style='width:70px;height:70px' src='/images/icon/water.png'></image>
           </view>
           <view class='info'>
-            <text class='orderType'>{{ item.orderType }}</text>
-            <text class='count'>x{{ item.count }}</text>
+            <text class='orderType'>{{ item.orderInfo.orderType }}</text>
+            <text class='count'>x{{ item.orderInfo.count }}</text>
           </view>
         </view>
         <view class='order-content-item-btn'>
           <view class='f-l leftInfo'>
           <view>
-            <text>配送时间：{{ item.sendTime }}</text>
+            <text>配送时间：{{ item.orderInfo.sendTime }}</text>
           </view>
-           <view class='orderStatus' wx:if='{{ item.orderStatus==3 }}'>
-            <text>空桶回收：</text><text class='redFont'>空桶已回收{{ item.barrelCount }}个</text>
+           <view class='orderStatus' wx:if='{{ item.orderInfo.orderStatus==3 }}'>
+            <text>空桶回收：</text><text class='redFont'>空桶已回收{{ item.orderInfo.barrelCount }}个</text>
            </view>
           </view>
           <view class='f-r optionBtn'>
-            <button class='optionBtn' wx:if='{{ item.orderStatus==1 }}' bindtap='handleDeliver'>马上配送</button>
-            <button class='optionBtn' wx:if='{{ item.orderStatus==3 }}' bindtap='toOrderDetail'>详情</button>
+            <button class='optionBtn' wx:if='{{ item.orderInfo.orderStatus==1 }}'>马上配送2</button>
+            <button class='optionBtn' wx:if='{{ item.orderInfo.orderStatus!==1 }}' bindtap='toOrderDetail' data-nowOrder='{{ item }}'>详情</button>
           </view>
         </view>
       </view>
