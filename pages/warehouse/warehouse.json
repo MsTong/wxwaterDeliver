@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "仓库数据",
+  "usingComponents": {
+    "i-tab": "../../dist/tab/index"
+  }
 }

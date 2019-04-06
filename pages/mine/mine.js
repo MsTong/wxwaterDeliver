@@ -51,11 +51,10 @@ Page({
     level:1,
     weight: wx.getSystemInfoSync().windowWidth - 220
   },
-  changeregion() {
-    console.log(99)
-    // wx.navigateTo({
-    //   url: '/pages/rechargeList/rechargeList',
-    // })
+  toScoreList() {
+    wx.navigateTo({
+      url: '/pages/myScore/myScore',
+    })
   },
   onLoad: function (options) {
     //加载用户信息赋值给userInfo

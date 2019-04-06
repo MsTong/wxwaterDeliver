@@ -5,9 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    current: 0,
+    warehouse:
+    {
+      tzWater: {
+        lastNum: 200,
+        lastTime: '2019-04-05',
+        stock: 1000,
+      },
+      emptyBarrel: {
+        lastNum: 200,
+        lastTime: '2019-04-05',
+        stock: 1000,
+      }
+    }
   },
-
+  checkDetail() {
+    wx.navigateTo({
+      url: '/pages/warehouse/barrelDetail/barrelDetail'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

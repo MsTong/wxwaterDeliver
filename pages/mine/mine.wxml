@@ -8,7 +8,7 @@
         <open-data type="userNickName" lang="zh_CN"></open-data>
       </view>
     </view>
-    <view class='header-userlevel' bindtap='changeregion'>
+    <view class='header-userlevel' bindtap='toScoreList'>
       <view class='header-userlevel-line1'>
         <image src='/images/mine/good.png'></image>
         <view class='textBlock'>

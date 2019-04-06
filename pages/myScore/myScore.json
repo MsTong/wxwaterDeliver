@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "配送评分收入",
+  "usingComponents": {
+    "list-item": "../../components/list-item/list-item"
+  }
+}

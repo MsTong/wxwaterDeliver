@@ -1,0 +1,25 @@
+
+.listItem{
+  padding: 0 15px;
+  color: red;
+  }
+  .line1 {
+  overflow: hidden;
+  height: 180rpx;
+  width: 100vw;
+  text-align: right;
+}
+.line2 {
+  overflow: hidden;
+  height: 80rpx;
+  width: 100vw;
+}
+.line1-title {
+font-size:12px;
+font-family:PingFangSC-Regular;
+font-weight:400;
+color:rgba(51,51,51,1);
+line-height:3rpx;
+}
+.line1-score {
+}

@@ -38,6 +38,10 @@ Page({
     if (app.data.nowOrder) {
       this.setData({ "nowOrder": app.data.nowOrder })
     }
+    if (options.orderNo){
+      console.log(options.orderNo)
+    }
+    //通过orderNo获取配送详情
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -1,6 +1,6 @@
 <!--pages/myScore/myScore.wxml-->
 <view class='myScore'>
-  <view class='myScore-item' wx:for="{{scoreInfo.listArr}}" wx:key="{{index}}" bindtap="todetail" data-item="{{item}}">
+  <view class='myScore-item' wx:for="{{scoreInfo.listArr}}" wx:key="{{index}}">
     <view class='line1'>
       <text class='line1-title f-l'>{{item.title}}</text>
       <text class='line1-score f-r'>+{{item.score}}</text>
@@ -13,6 +13,6 @@
     </view>
   </view>
   <view class='myScore-sum'>
-  <text>收益合计：</text><text class='redFont'>{{scoreInfo.allScore}}</text>
+  <text>评分合计：</text><text class='redFont'>{{scoreInfo.allScore}}</text>
   </view>
 </view>

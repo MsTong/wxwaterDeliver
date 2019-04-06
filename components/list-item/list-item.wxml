@@ -1,0 +1,12 @@
+<template name="listItem">
+    <view class='line1'>
+      <text class='line1-title f-l'>{{title}}</text>
+      <text class='line1-score f-r'>+{{score}}</text>
+      <view style="clear:both;height:0"></view>
+    </view>
+    <view class='line2'>
+      <text class='f-l'>{{subtitle}}</text>
+      <text class='f-r'>{{createTime}}</text>
+      <view style="clear:both;height:0"></view>
+  </view>
+</template>

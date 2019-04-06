@@ -7,80 +7,69 @@ Page({
   data: {
     scoreInfo:{
     listArr:[{
-      title:"配送所得",
-      subtitle:"详细信息",
+      title:"新增评价",
+      subtitle:"用户评价所得",
       score:10,
-      createTime:"2015-01-20",
-      orderNo:1234555
+      createTime:"2015-01-20"
     }, {
-        title: "配送所得",
-        subtitle: "详细信息",
-        score: 10,
-        createTime: "2015-01-20",
-        orderNo: 1234555
-
-      }, {
-        title: "配送所得",
-        subtitle: "详细信息",
-        score: 10,
-        createTime: "2015-01-20",
-        orderNo: 1234555
-
-      }, {
-        title: "配送所得",
-        subtitle: "详细信息",
-        score: 10,
-        createTime: "2015-01-20",
-        orderNo: 1234555
-
-      }, {
-        title: "配送所得",
-        subtitle: "详细信息",
+        title: "新增评价",
+        subtitle: "用户评价所得",
         score: 10,
         createTime: "2015-01-20"
       }, {
-        title: "配送所得",
-        subtitle: "详细信息",
+        title: "新增评价",
+        subtitle: "用户评价所得",
         score: 10,
         createTime: "2015-01-20"
       }, {
-        title: "配送所得",
-        subtitle: "详细信息",
+        title: "新增评价",
+        subtitle: "用户评价所得",
         score: 10,
         createTime: "2015-01-20"
       }, {
-        title: "配送所得",
-        subtitle: "详细信息",
+        title: "新增评价",
+        subtitle: "用户评价所得",
         score: 10,
         createTime: "2015-01-20"
       }, {
-        title: "配送所得",
-        subtitle: "详细信息",
+        title: "新增评价",
+        subtitle: "用户评价所得",
         score: 10,
         createTime: "2015-01-20"
       }, {
-        title: "配送所得",
-        subtitle: "详细信息",
+        title: "新增评价",
+        subtitle: "用户评价所得",
         score: 10,
         createTime: "2015-01-20"
       }, {
-        title: "配送所得",
-        subtitle: "详细信息",
+        title: "新增评价",
+        subtitle: "用户评价所得",
         score: 10,
         createTime: "2015-01-20"
       }, {
-        title: "配送所得",
-        subtitle: "详细信息",
+        title: "新增评价",
+        subtitle: "用户评价所得",
+        score: 10,
+        createTime: "2015-01-20"
+      }, {
+        title: "新增评价",
+        subtitle: "用户评价所得",
+        score: 10,
+        createTime: "2015-01-20"
+      }, {
+        title: "新增评价",
+        subtitle: "用户评价所得",
+        score: 10,
+        createTime: "2015-01-20"
+      }, {
+        title: "新增评价",
+        subtitle: "用户评价所得",
         score: 10,
         createTime: "2015-01-20"
       }],
     allScore:100}
   },
-  todetail(e) {
-    wx.navigateTo({
-      url: '/pages/order/orderDetail/orderDetail?orderNo=' + e.currentTarget.dataset.item.orderNo,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

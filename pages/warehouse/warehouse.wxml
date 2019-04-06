@@ -1,2 +1,28 @@
 <!--pages/warehouse/warehouse.wxml-->
-<text>pages/warehouse/warehouse.wxml</text>
+<view class='warehouse'>
+  <!-- <view class='warehouse-item' wx:for='{{ dataList }}' wx:key='{{ index }}' bindtap='toDetail'> -->
+   <view class='warehouse-item'>
+    <view class='itemImg f-l'>
+      <image src='/images/icon/water.png'></image>
+    </view>
+    <view class='itemInfo f-l'>
+      <view class='itemInfo-title'>富C健康长寿桶装水</view>
+      <view class='itemInfo-lastNum'>最近一次入库：{{warehouse.tzWater.lastNum}}</view>
+      <view class='itemInfo-lastTime'>最近一次入库时间：{{warehouse.tzWater.lastTime}}</view>
+    </view>
+      <view style="clear:both;height:0"></view>
+    <view class='btnBar'>库存装水：{{warehouse.tzWater.stock}} 桶</view>
+</view>
+<view class='warehouse-item'>
+    <view class='itemImg f-l'>
+      <image src='/images/icon/water.png'></image>
+    </view>
+    <view class='itemInfo f-l'>
+      <view class='itemInfo-title'>空桶回收 <text class="checkDetail" bindtap='checkDetail'>明细</text></view>
+      <view class='itemInfo-lastNum'>最近一次空桶入库：{{warehouse.emptyBarrel.lastNum}}</view>
+      <view class='itemInfo-lastTime'>最近一次入库时间：{{warehouse.emptyBarrel.lastTime}}</view>
+    </view>
+      <view style="clear:both;height:0"></view>
+    <view class='btnBar'>库存装水：{{warehouse.emptyBarrel.stock}} 桶</view>
+</view>
+</view>
