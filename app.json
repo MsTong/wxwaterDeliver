@@ -1,9 +1,10 @@
 {
   "debug": true,
   "pages": [
+    "pages/test/test",
+    "pages/mine/mine",
     "pages/warehouse/warehouse",
     "pages/warehouse/barrelDetail/barrelDetail",
-    "pages/mine/mine",
     "pages/myScore/myScore",
     "pages/order/order",
     "pages/myWallet/myWallet",

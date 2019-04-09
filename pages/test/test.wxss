@@ -1,0 +1,6 @@
+/* pages/test/test.wxss */
+.btn {
+  width: 700rpx;
+  background: red;
+  height: 10px;
+}

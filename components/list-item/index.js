@@ -8,9 +8,18 @@ Component({
   //组件的对外属性，属性设置中可包含三个字段,type 表示属性类型、 value 表示属性初始值、 observer 表示属性值被更改时的响应函数    
   properties: {
     // 活动封面
+    itemObj: {
+      type: Object,
+      value:{
+        title:'',
+        subTitle:'',
+        score:0,
+        createTime:''
+      }
+    },
     title: {
       type: String,
-      value: ''
+      value: 'ddd'
     },
     // 活动标题
     subtitle: {

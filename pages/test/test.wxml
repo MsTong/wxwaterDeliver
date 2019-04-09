@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+<view>
+  <button bindtap='toA' class='btn'>toA</button>
+  <!-- <list-item title="dddd" subtitle="sss" score="10" createTime="2019-10-11"></list-item> -->
+   <list-item itemObj="{{itemObj}}"></list-item>
+</view>

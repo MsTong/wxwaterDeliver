@@ -1,0 +1,16 @@
+    <!-- <view class='line1'>
+      <text class='line1-title'>{{title}}</text>
+      <text class='line1-score'>+{{score}}</text>
+    </view>
+    <view class='line2'>
+      <text>{{subtitle}}</text>
+      <text>{{createTime}}</text>
+  </view> -->
+      <view class='line1'>
+      <text class='line1-title'>{{itemObj.title}}</text>
+      <text class='line1-score'>+{{itemObj.score}}</text>
+    </view>
+    <view class='line2'>
+      <text>{{itemObj.subtitle}}</text>
+      <text>{{itemObj.createTime}}</text>
+  </view>
